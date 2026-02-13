@@ -9,30 +9,28 @@
   
   <!-- Open Graph / Social sharing -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://your-vercel-domain.vercel.app/">
+  <meta property="og:url" content="https://h0lysalmon.vercel.app/">
   <meta property="og:title" content="Games">
   <meta property="og:description" content="Play browser games directly — no install required.">
   <meta name="twitter:card" content="summary_large_image">
   
-  <!-- Favicon (update path if needed) -->
+  <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png">
   
-  <!-- Scripts (comment out AdSense/Analytics if not using) -->
-  <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5521219086088837" crossorigin="anonymous"></script> -->
-  <!-- <meta name="google-adsense-account" content="ca-pub-5521219086088837"> -->
-  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-WX5VS54ZDW"></script> -->
+  <!-- Analytics & Ads (comment out if not needed) -->
+  <!--
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5521219086088837" crossorigin="anonymous"></script>
+  <meta name="google-adsense-account" content="ca-pub-5521219086088837">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WX5VS54ZDW"></script>
   <script>
-    // window.dataLayer = window.dataLayer || [];
-    // function gtag(){dataLayer.push(arguments);}
-    // gtag('js', new Date());
-    // gtag('config', 'G-WX5VS54ZDW');
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-WX5VS54ZDW');
   </script>
+  -->
   
-  <!-- Funding choices / other Google scripts — keep or remove -->
-  <!-- <script async src="https://fundingchoicesmessages.google.com/i/pub-5521219086088837?ers=1"></script> -->
-  <!-- <script>(function() {...})();</script> (signalGooglefcPresent) -->
-  
-  <!-- Original game loader script (keep unless replacing) -->
+  <!-- Original loader (keep unless replacing the source) -->
   <script src="https://cdn.jsdelivr.net/gh/gn-math/gn-math.github.io@main/gnmath.js"></script>
   
   <link rel="stylesheet" href="style.css">
@@ -58,7 +56,7 @@
     </div>
   </header>
 
-  <!-- Ad (comment out if unwanted) -->
+  <!-- Ad slot (comment out if unwanted) -->
   <!--
   <ins class="adsbygoogle"
        style="display:block; text-align:center;"
@@ -76,7 +74,7 @@
     <div id="container">Loading...</div>
   </main>
 
-  <!-- Zone viewer / iframe modal -->
+  <!-- Zone viewer -->
   <div id="zoneViewer">
     <div class="zone-header">
       <div class="zone-title">
@@ -86,15 +84,13 @@
       </div>
       <div class="zone-controls">
         <button onclick="fullscreenZone()">Fullscreen</button>
-        <button onclick="aboutBlank()">New Tab</button>
-        <button onclick="downloadZone()">Download</button>
         <button onclick="closeZone()">Close</button>
       </div>
     </div>
     <iframe id="zoneFrame"></iframe>
   </div>
 
-  <!-- Popup overlay (for settings/contact/etc) -->
+  <!-- Popup overlay -->
   <div id="popupOverlay">
     <div class="popup">
       <div class="popup-header">
@@ -106,9 +102,6 @@
       </div>
     </div>
   </div>
-
-  <!-- Second ad slot (optional) -->
-  <!-- same ins + push script as above -->
 
   <footer>
     <div class="footer-links">
